@@ -1,0 +1,27 @@
+
+Command to run code 
+npm init -y
+npm i express body-parser twilio 
+node server.js
+
+Input format for message(Javascript object )
+{
+     "accountSid" : "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "authToken" : "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+     "from": "whatsapp:+141xxxxxxxx",
+     "to":      "whatsapp:+91xxxxxxxxxx",
+      "message" : "Hello there !"
+}
+
+Input format for media(Javascript object )
+{
+     "accountSid" : "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "authToken" : "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+     "from": "whatsapp:+141xxxxxxxx",
+     "to":      "whatsapp:+91xxxxxxxxxx",
+      "mediaUrl" : "https://thumbs.dreamstime.com/b/beautiful-rain-forest-ang-ka-nature-trail-doi-inthanon-national-park-thailand-36703721.jpg"
+}
+
+APIs are -
+http://localhost:3000/media
+http://localhost:3000/message
